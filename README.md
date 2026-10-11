@@ -144,13 +144,13 @@ Upload (PDF, DOCX, pasted text), AI extraction with source citations, confirmed/
 - **AI output varies between runs.** The same file can yield a different number of items, and clauses can be missed. This is why human review is central, and why nothing reaches the dashboard or summary until approved.
 - **Slow uploads**: one extraction takes roughly 20 to 70 seconds.
 - **Free hosting**: the API sleeps after 15 minutes idle, and the first request can take about a minute.
-- **PDF reader**: the `pdf-parse` library occasionally fails on the first PDF after the server starts ("bad XRef entry"). Retrying works. Only text-based PDFs are supported.
+- **PDF reader**: PDFs are read with `pdfjs-dist`. The first version used `pdf-parse`, which failed intermittently with "bad XRef entry" on the hosted server, so it was replaced. Only text-based PDFs are supported; scanned PDFs are not.
 - **Deadlines**: calculated for exact dates, "N days before/after the expiry or effective date", and monthly repeats. Clauses relative to other events (for example "within 15 days of receiving an invoice") are shown without a calendar date.
 - **Database access**: the Atlas IP allowlist is open (0.0.0.0/0) so the hosted server can connect. The database user and password protect it.
 - Local and live environments currently point at the same database.
 
 ## Deployment
 
-- **Backend**: Render web service, root directory `backend`, build `npm install`, start `node server.js`, environment variables `MONGODB_URI`, `GEMINI_API_KEY`, `NODE_VERSION=24`.
+- **Backend**: Render web service, root directory `backend`, build `npm install`, start `node server.js`, environment variables `MONGODB_URI`, `GEMINI_API_KEY`, `NODE_VERSION=22.12.0`.
 - **Frontend**: Vercel, root directory `frontend`, Vite preset, environment variable `VITE_API_URL` set to the Render address. `frontend/vercel.json` rewrites all routes to `index.html` so page refreshes work.
 - **Database**: MongoDB Atlas free tier.
