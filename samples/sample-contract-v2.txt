@@ -1,0 +1,27 @@
+SERVICE AGREEMENT (SAMPLE - FICTIONAL) - AMENDMENT 1
+
+This Agreement is made on 1 March 2026 (the "Effective Date") between
+Brightline Software Pvt Ltd (the "Vendor") and Kosi Traders Pvt Ltd
+(the "Client").
+
+1. Term. This Agreement starts on the Effective Date and expires on
+31 December 2027.
+
+2. Renewal. This Agreement renews automatically for one year unless
+either party gives written notice at least 90 days before the expiry date.
+
+3. Termination. Either party may terminate this Agreement for material
+breach by giving 30 days written notice. The Client may also terminate
+for convenience by giving 90 days written notice.
+
+4. Payment. The Client shall pay each Vendor invoice within 30 days of
+receiving it.
+
+5. Reports. The Vendor shall deliver a usage report by the 5th day of
+each month.
+
+6. Support. The Vendor shall respond to support requests within 4
+business hours.
+
+7. Non-renewal. Notice of non-renewal must be given at least 90 days
+before the expiry date.

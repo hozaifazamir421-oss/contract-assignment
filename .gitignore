@@ -1,0 +1,11 @@
+node_modules/
+.env
+*.local
+dist/
+
+
+analysis.json
+approve.json
+patch.json
+contract.json
+dashboard.json
